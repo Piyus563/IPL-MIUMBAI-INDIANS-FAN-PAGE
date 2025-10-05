@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai Indians - Official Website | ShadowFox Internship Project</title>
+    <meta name="description" content="Official Mumbai Indians website featuring team information, match schedules, player profiles, statistics, news updates, and fan engagement features.">
+    <meta name="keywords" content="Mumbai Indians, IPL, Cricket, Team, Players, Matches, Statistics, News, Fan Zone">
+    <meta name="author" content="ShadowFox Intern">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23004BA0'/><text x='50' y='60' text-anchor='middle' font-family='Arial' font-size='30' font-weight='bold' fill='%23FFD700'>MI</text></svg>">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <div class="logo-box">MI</div>
+                Mumbai Indians
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Squad</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#players">Players</a></li>
+                <li><a href="#stats">Statistics</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#fanzone">Fan Zone</a></li>
+                <li><a href="#merchandise">Store</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Live Ticker -->
+    <div class="live-ticker">
+        <div class="ticker-content">
+            <span>🏏 MI vs CSK - MI won by 5 wickets</span>
+            <span>🏆 Mumbai Indians - 5 Time IPL Champions</span>
+            <span>⭐ Rohit Sharma - Leading Run Scorer</span>
+            <span>🎯 Next Match: MI vs RCB - May 25, 2024</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Mumbai Indians</h1>
+                <p>Champions of the Indian Premier League</p>
+                <a href="#team" class="btn">Meet the Team</a>
+                <div class="trophies">
+                    <div class="trophy">🏆</div>
+                    <div class="trophy">🏆</div>
+                    <div class="trophy">🏆</div>
+                    <div class="trophy">🏆</div>
+                    <div class="trophy">🏆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+                <p>Meet the champions who make Mumbai Indians proud</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="player-box">RS</div>
+                    <h3>Rohit Sharma</h3>
+                    <p class="role">Captain & Batsman</p>
+                    <p>The Hitman leads from the front with his explosive batting and tactical brilliance.</p>
+                </div>
+                <div class="team-card">
+                    <div class="player-box">JB</div>
+                    <h3>Jasprit Bumrah</h3>
+                    <p class="role">Fast Bowler</p>
+                    <p>The yorker specialist who can turn the game with his deadly accurate bowling.</p>
+                </div>
+                <div class="team-card">
+                    <div class="player-box">HP</div>
+                    <h3>Hardik Pandya</h3>
+                    <p class="role">All-rounder</p>
+                    <p>The dynamic all-rounder who brings power hitting and medium pace bowling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Match Schedule Section -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <div class="section-title">
+                <h2>Match Schedule</h2>
+                <p>Upcoming fixtures and recent results</p>
+            </div>
+            <div class="schedule-tabs">
+                <button class="tab-btn active" data-tab="upcoming">Upcoming</button>
+                <button class="tab-btn" data-tab="results">Results</button>
+            </div>
+            <div class="schedule-content">
+                <div class="tab-content active" id="upcoming">
+                    <div class="match-fixture">
+                        <div class="match-date">May 25, 2024 - 7:30 PM</div>
+                        <div class="match-teams">
+                            <div class="team-info">
+                                <div class="team-logo">MI</div>
+                                <span>Mumbai Indians</span>
+                            </div>
+                            <div class="vs-text">VS</div>
+                            <div class="team-info">
+                                <div class="team-logo opponent">RCB</div>
+                                <span>Royal Challengers Bangalore</span>
+                            </div>
+                        </div>
+                        <div class="match-venue">📍 Wankhede Stadium, Mumbai</div>
+                        <button class="btn match-btn">Get Tickets</button>
+                    </div>
+                    <div class="match-fixture">
+                        <div class="match-date">May 28, 2024 - 7:30 PM</div>
+                        <div class="match-teams">
+                            <div class="team-info">
+                                <div class="team-logo">MI</div>
+                                <span>Mumbai Indians</span>
+                            </div>
+                            <div class="vs-text">VS</div>
+                            <div class="team-info">
+                                <div class="team-logo opponent">CSK</div>
+                                <span>Chennai Super Kings</span>
+                            </div>
+                        </div>
+                        <div class="match-venue">📍 M.A. Chidambaram Stadium, Chennai</div>
+                        <button class="btn match-btn">Get Tickets</button>
+                    </div>
+                </div>
+                <div class="tab-content" id="results">
+                    <div class="match-result">
+                        <div class="match-date">May 20, 2024</div>
+                        <div class="match-teams">
+                            <div class="team-info winner">
+                                <div class="team-logo">MI</div>
+                                <span>Mumbai Indians</span>
+                                <div class="score">185/4</div>
+                            </div>
+                            <div class="vs-text">WON</div>
+                            <div class="team-info">
+                                <div class="team-logo opponent">KKR</div>
+                                <span>Kolkata Knight Riders</span>
+                                <div class="score">182/7</div>
+                            </div>
+                        </div>
+                        <div class="match-summary">MI won by 3 runs • Rohit Sharma 89*</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Player Profiles Section -->
+    <section class="players" id="players">
+        <div class="container">
+            <div class="section-title">
+                <h2>Player Profiles</h2>
+                <p>Meet our star players and their statistics</p>
+            </div>
+            <div class="players-grid">
+                <div class="player-profile">
+                    <div class="player-avatar">RS</div>
+                    <div class="player-info">
+                        <h3>Rohit Sharma</h3>
+                        <p class="player-role">Captain • Batsman</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">6,211</span>
+                                <span class="stat-label">Runs</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">40</span>
+                                <span class="stat-label">50s</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">130.6</span>
+                                <span class="stat-label">Strike Rate</span>
+                            </div>
+                        </div>
+                        <button class="btn player-btn">View Profile</button>
+                    </div>
+                </div>
+                <div class="player-profile">
+                    <div class="player-avatar">JB</div>
+                    <div class="player-info">
+                        <h3>Jasprit Bumrah</h3>
+                        <p class="player-role">Bowler • Fast</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">145</span>
+                                <span class="stat-label">Wickets</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">7.55</span>
+                                <span class="stat-label">Economy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">18.4</span>
+                                <span class="stat-label">Average</span>
+                            </div>
+                        </div>
+                        <button class="btn player-btn">View Profile</button>
+                    </div>
+                </div>
+                <div class="player-profile">
+                    <div class="player-avatar">HP</div>
+                    <div class="player-info">
+                        <h3>Hardik Pandya</h3>
+                        <p class="player-role">All-rounder</p>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">1,476</span>
+                                <span class="stat-label">Runs</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">42</span>
+                                <span class="stat-label">Wickets</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">143.4</span>
+                                <span class="stat-label">Strike Rate</span>
+                            </div>
+                        </div>
+                        <button class="btn player-btn">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Statistics Section -->
+    <section class="team-statistics" id="team-stats">
+        <div class="container">
+            <div class="section-title">
+                <h2>Team Statistics</h2>
+                <p>Comprehensive performance data and records</p>
+            </div>
+            <div class="stats-dashboard">
+                <div class="stats-category">
+                    <h3>🏆 Tournament Records</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-desc">IPL Titles</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-desc">Playoff Appearances</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">62%</span>
+                            <span class="stat-desc">Win Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-category">
+                    <h3>🏏 Batting Records</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">264/5</span>
+                            <span class="stat-desc">Highest Total</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">109*</span>
+                            <span class="stat-desc">Highest Individual</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">156</span>
+                            <span class="stat-desc">Sixes Hit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-category">
+                    <h3>🎯 Bowling Records</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">5/13</span>
+                            <span class="stat-desc">Best Bowling</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">7.8</span>
+                            <span class="stat-desc">Team Economy</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">89</span>
+                            <span class="stat-desc">Lowest Defended</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest News</h2>
+                <p>Stay updated with the latest from Mumbai Indians</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-box">🏆</div>
+                    <div class="news-card-content">
+                        <h3>Mumbai Indians Win IPL 2023</h3>
+                        <p class="news-date">May 28, 2023</p>
+                        <p>Mumbai Indians clinch their 6th IPL title with a thrilling victory in the final match.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-box">⭐</div>
+                    <div class="news-card-content">
+                        <h3>New Player Signings</h3>
+                        <p class="news-date">March 15, 2023</p>
+                        <p>Mumbai Indians announce exciting new signings for the upcoming season.</p>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-box">🏏</div>
+                    <div class="news-card-content">
+                        <h3>Pre-Season Training Camp</h3>
+                        <p class="news-date">February 10, 2023</p>
+                        <p>Team gears up for the new season with intensive training sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: white;">Championship Stats</h2>
+                <p style="color: #ccc;">Our journey to greatness in numbers</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">5</div>
+                    <h3>IPL Titles</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">240</div>
+                    <h3>Matches Won</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <h3>Years in IPL</h3>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50M+</div>
+                    <h3>Fans Worldwide</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Photo Gallery</h2>
+                <p>Memorable moments from our journey</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-box">🏆</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-box">🏏</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-box">🏟️</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-box">🎉</div>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Zone Section -->
+    <section class="fanzone" id="fanzone">
+        <div class="container">
+            <div class="section-title">
+                <h2>MI Paltan Fan Zone</h2>
+                <p>Connect, engage, and show your support</p>
+            </div>
+            <div class="fanzone-grid">
+                <div class="fan-activity">
+                    <h3>🎵 Team Anthem</h3>
+                    <div class="anthem-player">
+                        <div class="play-btn">▶️</div>
+                        <div class="anthem-info">
+                            <p>"Duniya Hila Denge Hum"</p>
+                            <span>Official MI Anthem 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="fan-activity">
+                    <h3>📸 Fan Photos</h3>
+                    <div class="fan-photos">
+                        <div class="photo-slot">📷</div>
+                        <div class="photo-slot">🏟️</div>
+                        <div class="photo-slot">🎉</div>
+                        <button class="btn upload-btn">Upload Your Photo</button>
+                    </div>
+                </div>
+                <div class="fan-activity">
+                    <h3>💬 Fan Chat</h3>
+                    <div class="chat-preview">
+                        <div class="chat-message">
+                            <strong>MIPaltan_Fan:</strong> What a match! 🔥
+                        </div>
+                        <div class="chat-message">
+                            <strong>Rohit_45:</strong> Bumrah is unstoppable! 💪
+                        </div>
+                        <button class="btn chat-btn">Join Chat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Poll Section -->
+    <section class="fan-poll" id="poll">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fan Poll</h2>
+                <p>Vote for your favorite MI player</p>
+            </div>
+            <div class="poll-container">
+                <div class="poll-question">Who is your favorite MI player?</div>
+                <div class="poll-options">
+                    <div class="poll-option" data-player="rohit">
+                        <div class="poll-bar">
+                            <div class="poll-fill" style="width: 45%;"></div>
+                        </div>
+                        <span>Rohit Sharma (45%)</span>
+                    </div>
+                    <div class="poll-option" data-player="bumrah">
+                        <div class="poll-bar">
+                            <div class="poll-fill" style="width: 30%;"></div>
+                        </div>
+                        <span>Jasprit Bumrah (30%)</span>
+                    </div>
+                    <div class="poll-option" data-player="hardik">
+                        <div class="poll-bar">
+                            <div class="poll-fill" style="width: 25%;"></div>
+                        </div>
+                        <span>Hardik Pandya (25%)</span>
+                    </div>
+                </div>
+                <button class="btn poll-vote-btn">Vote Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Feed -->
+    <section class="social-feed">
+        <div class="container">
+            <div class="section-title">
+                <h2>Social Media</h2>
+                <p>Follow us on social platforms</p>
+            </div>
+            <div class="social-grid">
+                <div class="social-card twitter">
+                    <div class="social-header">
+                        <i class="fab fa-twitter"></i>
+                        <span>@MumbaiIndians</span>
+                    </div>
+                    <p>What a match! Rohit Sharma's captaincy was outstanding! 🏏⚡ #MumbaiIndians #IPL2024</p>
+                    <div class="social-stats">
+                        <span>❤️ 2.5K</span>
+                        <span>🔄 1.2K</span>
+                        <span>💬 456</span>
+                    </div>
+                </div>
+                <div class="social-card instagram">
+                    <div class="social-header">
+                        <i class="fab fa-instagram"></i>
+                        <span>@mumbaiindians</span>
+                    </div>
+                    <p>Behind the scenes training session! 💪🏏 #TeamWork #MIPaltan</p>
+                    <div class="social-stats">
+                        <span>❤️ 15.2K</span>
+                        <span>💬 892</span>
+                    </div>
+                </div>
+                <div class="social-card youtube">
+                    <div class="social-header">
+                        <i class="fab fa-youtube"></i>
+                        <span>Mumbai Indians</span>
+                    </div>
+                    <p>🎥 Watch: Best catches of IPL 2024 | Mumbai Indians highlights</p>
+                    <div class="social-stats">
+                        <span>👀 125K views</span>
+                        <span>👍 8.9K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merchandise Section -->
+    <section class="merchandise" id="merchandise">
+        <div class="container">
+            <div class="section-title">
+                <h2>Official Merchandise</h2>
+                <p>Show your support with official MI gear</p>
+            </div>
+            <div class="merch-grid">
+                <div class="merch-card">
+                    <div class="merch-box">👕</div>
+                    <div class="merch-card-content">
+                        <h3 class="merch-title">Official MI Jersey</h3>
+                        <p class="merch-price">₹2,499</p>
+                        <p>Premium quality official team jersey with player names available.</p>
+                        <button class="merch-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="merch-card">
+                    <div class="merch-box">🧢</div>
+                    <div class="merch-card-content">
+                        <h3 class="merch-title">MI Team Cap</h3>
+                        <p class="merch-price">₹899</p>
+                        <p>Official team cap with embroidered logo and adjustable strap.</p>
+                        <button class="merch-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="merch-card">
+                    <div class="merch-box">☕</div>
+                    <div class="merch-card-content">
+                        <h3 class="merch-title">MI Coffee Mug</h3>
+                        <p class="merch-price">₹399</p>
+                        <p>Start your day with MI spirit. Ceramic mug with team logo.</p>
+                        <button class="merch-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section class="tickets" id="tickets">
+        <div class="container">
+            <div class="section-title">
+                <h2>Match Tickets</h2>
+                <p>Book your seats for the next home match</p>
+            </div>
+            <div class="tickets-grid">
+                <div class="ticket-card">
+                    <h3 class="ticket-type">General Stand</h3>
+                    <div class="ticket-price">₹500</div>
+                    <ul class="ticket-features">
+                        <li><i class="fas fa-check"></i> Stadium entry</li>
+                        <li><i class="fas fa-check"></i> General seating</li>
+                        <li><i class="fas fa-check"></i> Basic facilities</li>
+                    </ul>
+                    <button class="ticket-btn">Buy Now</button>
+                </div>
+                <div class="ticket-card">
+                    <h3 class="ticket-type">Premium Stand</h3>
+                    <div class="ticket-price">₹1,500</div>
+                    <ul class="ticket-features">
+                        <li><i class="fas fa-check"></i> Premium seating</li>
+                        <li><i class="fas fa-check"></i> Better view</li>
+                        <li><i class="fas fa-check"></i> Refreshment voucher</li>
+                        <li><i class="fas fa-check"></i> MI merchandise</li>
+                    </ul>
+                    <button class="ticket-btn">Buy Now</button>
+                </div>
+                <div class="ticket-card">
+                    <h3 class="ticket-type">VIP Box</h3>
+                    <div class="ticket-price">₹5,000</div>
+                    <ul class="ticket-features">
+                        <li><i class="fas fa-check"></i> VIP seating</li>
+                        <li><i class="fas fa-check"></i> Premium dining experience</li>
+                        <li><i class="fas fa-check"></i> Player meet & greet opportunity</li>
+                        <li><i class="fas fa-check"></i> Exclusive MI merchandise</li>
+                    </ul>
+                    <button class="ticket-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback & Mentorship Section -->
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <div class="section-title">
+                <h2>Feedback & Continuous Improvement</h2>
+                <p>Help us enhance your MI Paltan experience</p>
+            </div>
+            <div class="feedback-grid">
+                <div class="feedback-card">
+                    <h3>📝 Website Feedback</h3>
+                    <form class="feedback-form">
+                        <div class="rating-section">
+                            <label>Rate your experience:</label>
+                            <div class="star-rating">
+                                <span class="star" data-rating="1">⭐</span>
+                                <span class="star" data-rating="2">⭐</span>
+                                <span class="star" data-rating="3">⭐</span>
+                                <span class="star" data-rating="4">⭐</span>
+                                <span class="star" data-rating="5">⭐</span>
+                            </div>
+                        </div>
+                        <textarea placeholder="Share your thoughts on the website design, functionality, and user experience..." rows="4"></textarea>
+                        <button type="submit" class="btn">Submit Feedback</button>
+                    </form>
+                </div>
+                <div class="feedback-card">
+                    <h3>🛠️ Technical Showcase</h3>
+                    <div class="tech-stack">
+                        <h4>Technologies Demonstrated:</h4>
+                        <div class="tech-badges">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript ES6+</span>
+                            <span class="tech-badge">Responsive Design</span>
+                            <span class="tech-badge">Animations</span>
+                            <span class="tech-badge">Accessibility</span>
+                            <span class="tech-badge">Performance</span>
+                            <span class="tech-badge">UX/UI</span>
+                        </div>
+                    </div>
+                    <div class="development-metrics">
+                        <h4>Development Metrics:</h4>
+                        <div class="metric">
+                            <span>Code Quality:</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;">95%</div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <span>Responsiveness:</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 98%;">98%</div>
+                            </div>
+                        </div>
+                        <div class="metric">
+                            <span>User Experience:</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 92%;">92%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <h3>🎆 Creative Features</h3>
+                    <div class="feature-showcase">
+                        <div class="feature-item">
+                            <i class="fas fa-magic"></i>
+                            <span>Interactive Animations</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile-First Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-search"></i>
+                            <span>Advanced Search</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance Analytics</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-universal-access"></i>
+                            <span>Accessibility Features</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-palette"></i>
+                            <span>Professional Design</span>
+                        </div>
+                    </div>
+                    <p class="passion-statement">
+                        🏆 <em>"Crafted with passion for Mumbai Indians and dedication to web development excellence. This project demonstrates technical proficiency, creative problem-solving, and deep appreciation for IPL fan culture."</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>Mumbai Indians Cricket Team, Wankhede Stadium, Mumbai, Maharashtra 400020</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+91 22 2494 5000</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@mumbaiindians.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Action Menu -->
+    <div class="fab-container">
+        <div class="fab-main">
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="fab-options">
+            <div class="fab-option" title="Share Website">
+                <i class="fas fa-share-alt"></i>
+            </div>
+            <div class="fab-option" title="Bookmark">
+                <i class="fas fa-bookmark"></i>
+            </div>
+            <div class="fab-option" title="Support">
+                <i class="fas fa-headset"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>About MI</h3>
+                    <ul>
+                        <li><a href="#team">Team History</a></li>
+                        <li><a href="#stats">Ownership</a></li>
+                        <li><a href="#players">Management</a></li>
+                        <li><a href="#stats">Achievements</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#tickets">Tickets</a></li>
+                        <li><a href="#merchandise">Merchandise</a></li>
+                        <li><a href="#fanzone">Fantasy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#feedback">FAQs</a></li>
+                        <li><a href="#feedback">Privacy Policy</a></li>
+                        <li><a href="#feedback">Terms of Use</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get the latest news and updates</p>
+                    <form id="newsletterForm" style="margin-top: 15px;">
+                        <input type="email" placeholder="Your email" style="padding: 10px; width: 100%; border-radius: 5px; border: none; margin-bottom: 10px;">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mumbai Indians. All Rights Reserved. | ShadowFox Internship Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
